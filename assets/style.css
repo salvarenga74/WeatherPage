@@ -1,0 +1,22 @@
+.pageTitle{
+    color:white;
+    font-size: 27px;
+}
+
+.textSearch{
+    font: black;
+    font-size: 50px;
+}
+
+#searchSection{
+    margin: 10px 0;
+    border-bottom: solid lightslategray;
+}
+
+.mainForcastBox, .searchCard{
+    margin: 10px 10px;
+}
+
+h4{
+    margin-top: 20px;
+}
