@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
     <link rel="stylesheet" href="assets/style.css"/>
 </head>
 <body>
@@ -35,10 +39,10 @@
             <article class="col-8 mainForcastBox">
                 <div class="card row">
                     <div class="card-body currentForcast">
-                      <h3 class=currentTitle><span id="currentPlace"></span><span id="currentDate"></span></h3>
-                      <p>Temp: <span id="currentTemp"></span>^*F</p>
-                      <p>Wind: <span id="currentWind"></span>MPH</p>
-                      <p>Humidity: <span id="currentHumidity"></span>%</p>
+                      <h3 class=currentTitle><span id="currentPlace"></span> <span id="currentDate"></span> <span style="display:inline-block"><img id="currentIcon"  src=""></span></h3>
+                      <p>Temp: <span id="currentTemp"></span></p>
+                      <p>Wind: <span id="currentWind"></span></p>
+                      <p>Humidity: <span id="currentHumidity"></span></p>
                       <p>UV Index: <span class="badge badge-secondary uvChange"></span></p>
                     </div>
                 </div>
@@ -46,32 +50,47 @@
                 <div class="card-deck">
                     <div class="card">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 class="card-title" id="c1Date"></h4>
+                        <span class="card-text" id="c1Icon" style="display:inline-block"><img id="c1Icon"  src=""></span>
+                        <p class="card-text" id="c1Temp"></p>
+                        <p class="card-text" id="c1Wind"></p>
+                        <p class="card-text" id="c1Humidity"></p>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <h4 class="card-title" id="c2Date"></h4>
+                        <p class="card-text" id="c2Icon"></p>
+                        <p class="card-text" id="c2Temp"></p>
+                        <p class="card-text" id="c2Wind"></p>
+                        <p class="card-text" id="c2Humidity"></p>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <h4 class="card-title" id="c3Date"></h4>
+                        <p class="card-text" id="c3Icon"></p>
+                        <p class="card-text" id="c3Temp"></p>
+                        <p class="card-text" id="c3Wind"></p>
+                        <p class="card-text" id="c3Humidity"></p>
                       </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <h4 class="card-title" id="c4Date"></h4>
+                          <p class="card-text" id="c4Icon"></p>
+                          <p class="card-text" id="c4Temp"></p>
+                          <p class="card-text" id="c4Wind"></p>
+                          <p class="card-text" id="c4Humidity"></p>
                         </div>
-                      </div>
+                    </div>
                       <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <h4 class="card-title" id="c5Date"></h4>
+                          <p class="card-text" id="c5Icon"></p>
+                          <p class="card-text" id="c5Temp"></p>
+                          <p class="card-text" id="c5Wind"></p>
+                          <p class="card-text" id="c5Humidity"></p>
                         </div>
                       </div>
                 </div>
