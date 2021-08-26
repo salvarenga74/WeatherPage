@@ -2,6 +2,7 @@ const apiKey = "650a47000924349e89d41d97ff6cc517";
 
 let citiesArray = [];
 let previousSearchListEl = document.querySelector("#pastSearches");
+let pastCityBtn = document.querySelectorAll(".pastCityBtn");
 let searchBtnEl = document.querySelector(".searchBtn");
 
 searchBtnEl.addEventListener("click", whatCity);
@@ -28,23 +29,24 @@ function renderCities() {
         console.log(uniqueSearches);
     }
 
-
     for (j = 0; j < uniqueSearches.length; j++) {
         console.log("test");
         var city = uniqueSearches[j];
         var searchedCity = document.createElement("button");
         previousSearchListEl.appendChild(searchedCity);
         searchedCity.textContent = city;
-        searchedCity.setAttribute("class", "list-group-item list-group-item-action list-group-item-dark text-center ");
-        
-        searchedCity.addEventListener("click", function (event) {
-            event.preventDefault()
-            let searchCity = city;
-            getCoordinates(searchCity);
-            console.log("recall city: " + city);
-        });
-    };
+        searchedCity.setAttribute("class", "list-group-item list-group-item-action list-group-item-dark text-center pastCityBtn");
+    };   
 };
+
+previousSearchListEl.addEventListener("click", function (event) {
+    event.preventDefault()
+    if(event.target.matches(".pastCityBtn")){
+    let searchCity = event.target.textContent;
+    getCoordinates(searchCity);
+    console.log("recall city: " + searchCity);
+    }
+});
 
 function whatCity(event) {
     event.preventDefault()
