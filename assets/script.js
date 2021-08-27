@@ -108,6 +108,7 @@ function weatherInfo(cityLat, cityLon) {
                 document.querySelector(".uvChange").setAttribute("style","background-color:red");
                 console.log(uvNum);
             };
+            
             // Forecast: card 1 
             let c1Dt = weatherData.daily[1].dt;
             let c1Image = weatherData.daily[1].weather[0].icon;
