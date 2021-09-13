@@ -84,7 +84,7 @@ function weatherInfo(cityLat, cityLon) {
         .then(weatherData => {
             console.log(weatherData);
 
-            // mainForcastBox
+            // mainForecastBox
             let currentDt = weatherData.current.dt;
             let currentImage = weatherData.current.weather[0].icon;
             let uvNum = weatherData.current.uvi;
