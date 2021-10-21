@@ -9,7 +9,7 @@ This web application can be used to view the current weather and the forecast fo
 ---
 
 ## Results
-You can view my deployed Weather Dashboard here: https://salvarenga74.github.io/WeatherPage_HW06/
+You can view my deployed Weather Dashboard here: https://salvarenga74.github.io/WeatherPage/
 
 <img src="assets/image Kabul weather.png" alt="Screen grab of the current weather in Kabul, called from the list of previously searched cities."/>
 
