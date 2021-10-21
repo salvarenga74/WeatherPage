@@ -1,4 +1,4 @@
-# **Weather Forecast Dashboard: Code Creation HW06**
+# **Weather Forecast Dashboard: Code Creation**
 #### By Sally Alvarenga 🌺,
 ---
 ## Task and Expectation
